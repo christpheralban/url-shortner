@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+<!-- ANIMATION -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous"/>  
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+      <!-- header navbar  -->
+<nav class="navbar navbar-expand-sm navbar-light pt-3">
+    <a class="navbar-brand ml-5 pl-5" href="#">Shortly</a>
+    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Resources</a>
+            </li>
+        </ul>
+        <ul class="form-inline my-2 my-lg-0 mr-5 pr-5">
+            <li style="list-style: none;" class="nav-item">
+                <a class="nav-link disabled" href="#">Login</a>
+            </li>
+            <button id="button-rounded" class="btn btn-outline-success my-2 my-sm-0" type="submit">Sign Up</button>
+        </ul>
+    </div>
+</nav>
+<!-- end of header navbar  -->
+
+
+<!-- first section -->
+    <section class="mt-5">
+        <!-- <div class="container"> -->
+            <div class="row">
+                <div style="padding-left: 120px;" class="col-lg-6 col-sm-6">
+                    <h1 class="mt-5">  More than just <br> shorter links</h1>
+                    <p class="disabled">
+                        Build your brand’s recognition and get detailed <br> insights 
+                        on how your links are performing.</p>
+                        
+                        <button id="button-rounded"> Get Started </button>
+                </div>
+                <div class="col-lg-6 col-sm-6">
+                    <img src="/images/illustration-working.svg" width="680" alt="">
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- end of first section -->
+
+
+    <center>
+        <div class="rectangle">
+            <div id="inner-rec">
+                        <form class="form-inline my-2 my-lg-0">
+                            <input  style="width: 400px;padding: 0.4rem;"  type="url" id="urlinput" placeholder="Shorten a link here..">
+                            <button onclick="shorturl()" style="border-radius: 5px;" id="button-rounded"> Shorten Url </button>
+                        </form>
+                    </div>
+            </div>
+    </center>
+
+    <section id="second-section">
+        
+        <div class="text mt-5 pt-5">
+            <h2>Advanced Statistics</h2>
+
+
+            <p class="text-muted">
+        Track how your links are performing across the web with <br> our 
+            advanced statistics dashboard.
+            </p>    
+        </div>
+
+        <div class="container pt-5 mt-5 pb-5 mb-5">
+            <div class="row justify-content-center">
+
+                <div data-aos="flip-left"  data-aos-duration="3000" class="col-lg-3 col-sm-6 mr-4" style="text-align: left;background-color: white;border-radius: 9px;">
+                    <h5  class="pt-5">Brand Recognition</h5>
+
+                    <p class="disabled pt-3" style="font-size: 14px;color: gray;">Boost your brand recognition with each click. Generic links don’t 
+                        mean a thing. Branded links help instil confidence in your content.</p>
+                </div>
+
+                <div data-aos="flip-left" data-aos-duration="3000" class="col-lg-3 col-sm-6 mr-4 ml-3 mt-4" style="text-align: left;background-color: white;border-radius: 9px;">
+                    <h5 class="pt-5">Detailed Records</h5>
+
+                    <p class="disabled pt-3" style="font-size: 14px;color: gray;">
+                        Gain insights into who is clicking your links. Knowing when and where 
+                        people engage with your content helps inform better decisions.">
+                    
+                </div>
+                <div data-aos="flip-left" data-aos-duration="3000" class="col-lg-3 col-sm-6 mt-5 ml-2" style="text-align: left;background-color: white;border-radius: 9px;">
+                    <h5 class="pt-5">Fully Customizable</h5>
+
+                    <p class="disabled pt-3" style="font-size: 14px;color: gray;">  Improve brand awareness and content discoverability through customizable 
+                        links, supercharging audience engagement.</p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    
+    <section class="box" style="width: 100%;height: 200px; text-align: center;">
+        <div class="pt-5 mt-4">
+            <h3 style="color: white;">
+                Boost your links today
+            </h3>
+            <button class="mt-4" id="button-rounded">Get Started</button>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="row mt-5">
+            <div class="col-2 pl-5 ml-5">
+                <h1>Shortly</h1>
+            </div>
+       
+            <div class="col-lg-2 col-sm-6">
+                    <ul>
+                        <li><h5>Features</h5></li>
+                        <li>Link Shortning</li>
+                        <li>Branded Links</li>
+                        <li>Analytics</li>
+                    </ul>
+            </div>
+            <div class="col-lg-2 col-sm-6">
+                <ul>
+                    <li><h5>  Resources</h5></li>
+                  <li>Blog</li>  
+ <li>  Developers</li>
+ <li>  Support</li>
+                </ul>
+        </div>
+        <div class="col-lg-2 col-sm-6">
+            <ul>
+                <li><h5> About</h5></li>
+               
+<li>  Our Team</li>
+<li>  Careers</li>
+<li>  Contact</li>
+            </ul>
+    </div>
+    <div class="col-lg-2 col-sm-6">
+       <div class="row">
+           <div class="col-2">
+               <img src="/images/icon-facebook.svg" alt="">
+           </div>
+           <div class="col-2"><img src="/images/icon-twitter.svg" alt=""></div>
+           <div class="col-2"><img src="/images/icon-pinterest.svg" alt=""></div>
+           <div class="col-2"><img src="/images/icon-instagram.svg" alt=""></div>
+       </div>
+</div>
+        </div>
+    </section>
+  </body>
+
+  <script>
+    AOS.init();
+  </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</html>
